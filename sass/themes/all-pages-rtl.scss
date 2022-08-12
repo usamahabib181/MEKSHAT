@@ -1,0 +1,55 @@
+@include arabicRTL2 {
+    .section-header__site-socail-icon .site-option:not(:first-child) {
+        padding-left: unset;
+        padding-right: 2rem;
+    }
+    .dn-P {
+        padding-right: 1rem;
+    }
+    .User-sidebar.show {
+        right: 0;
+        left: unset;
+        transition: all .3s ease;
+    }
+    .back-arrow {
+        transform: rotate(180deg);
+    }
+    .single-product .select-button a img {
+        margin-left: 4rem;
+        margin-right: unset;
+    }
+    .single-product .select-button .select-your-payment {
+        left: 1%;
+    }
+    .section-header .search-box {
+        right: unset;
+        left: 0;
+    }
+    .section-hero__right-side {
+        clip-path: polygon(0% 0, 85% 0%, 100% 100%, 0% 100%);
+    }
+    .section-hero__right-side .overlaysahow {
+        left: unset;
+        right: -5rem;
+        transform: rotate(180deg);
+    }
+    .section-login__right-side {
+        border-radius: 2rem 0rem 0rem 2rem;
+        overflow: hidden;
+    }
+    .section-login__left-side {
+        border-radius: 0rem 2rem 2rem 0rem;
+    }
+    .btn-md-primary img {
+        margin-left: unset;
+        margin-right: 4rem;
+        transform: rotate(180deg);
+    }
+    .section-login .get-started {
+        padding: 3.8rem 4rem 0rem 0rem;
+    }
+    .section-login__left-side .owl-dots {
+        padding-left: 1rem;
+        padding-right: unset;
+    }
+}

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html class="rtl" lang="" dir="rtl">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- FAVICON -->
+    <link rel="icon" href="./img/svg/fav-icon.svg" sizes="any" type="image/svg" />
+    <!-- Font Awesome Script -->
+    <!-- <script src="https://kit.fontawesome.com/7ae40850c4.js" crossorigin="anonymous"></script> -->
+    <!-- Font Awesome Css -->
+    <link rel="stylesheet" href="css/font-awesome/css/all.css" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Bootstrap 4.6x CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap-4.6x/bootstrap.min.css" /> -->
+    <!-- Bootstrap 5.0 beta 2 CSS -->
+    <link rel="stylesheet" href="css/bootstrap-5.0/bootstrap.min.css" />
+    <!-- Bootstrap 5.0 beta 2 RTL CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap-5.0/bootstrap.rtl.min.css" /> -->
+    <!-- links -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>MEKSHAT</title>
+</head>
+
+<body class="">
+    <!-- Sidebar- content -->
+    <div class="sidebar ">
+        <div class="logo-details">
+            <img src="./img/logos/small logo.png" class="img-fluid" alt="Mekshat">
+        </div>
+        <ul class="nav-links">
+            <li class="">
+                <div class="icon-link">
+                    <a href="#">
+                        <img src="./img/svg/icon-dashboard.svg" alt="blocks">
+                        <span class="link_name">Dashboard</span>
+                    </a>
+
+                </div>
+                <ul class="sub-menu blank">
+                    <li><a href="#" class="link_name">Dashboard</a></li>
+                </ul>
+            </li>
+            <li class="">
+                <div class="icon-link">
+                    <a href="#">
+                        <img src="./img/svg/order.svg" alt="order">
+                        <span class="link_name">Order</span>
+                    </a>
+
+                </div>
+                <ul class="sub-menu blank">
+                    <li><a href="#" class="link_name">Order</a></li>
+                </ul>
+            </li>
+            <li class="">
+                <div class="icon-link">
+                    <a href="#">
+                        <img src="./img/svg/product.svg" alt="Products">
+                        <span class="link_name">Products</span>
+                    </a>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="#" class="link_name">Products</a></li>
+                    <li><a href="#" class="sub-menu__dropitems">Category</a></li>
+                    <li><a href="#" class="sub-menu__dropitems">HTML&CSS</a></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle sub-menu__dropitems" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            PHP&MySQL
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Something else</a></li>
+                            <li><a class="dropdown-item" href="#">Something else</a></li>
+                            <li><a class="dropdown-item" href="#">Something else</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="">
+                <div class="icon-link">
+                    <a href="#">
+                        <img src="./img/svg/customers.svg" alt="Truck">
+                        <span class="link_name">Customers</span>
+                    </a>
+                </div>
+                <ul class="sub-menu blank">
+                    <li><a href="#" class="link_name">Customers</a></li>
+                </ul>
+
+            </li>
+            <li class="">
+                <div class="icon-link">
+                    <a href="#">
+                        <img src="./img/svg/message.svg" alt="Message">
+                        <span class="link_name">Message</span>
+                    </a>
+                    <!-- <i class="bx bxs-chevron-right"></i> -->
+                </div>
+                <ul class="sub-menu blank">
+                    <li><a href="#" class="link_name">Message</a></li>
+                </ul>
+            </li>
+            <div class="profile-details" style="user-select: auto;">
+                <li class="">
+                    <div class="icon-link">
+                        <a href="#">
+                            <img src="./img/svg/Icon-settings.svg" alt="setting">
+                            <span class="link_name">Setting</span>
+                        </a>
+
+                    </div>
+                    <ul class="sub-menu blank">
+                        <li><a href="#" class="link_name">Setting</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <div class="icon-link">
+                        <a href="#">
+                            <img src="./img/svg/help.svg" alt="Help">
+                            <span class="link_name">Help</span>
+                        </a>
+
+                    </div>
+                    <ul class="sub-menu blank">
+                        <li><a href="#" class="link_name">Help</a></li>
+                    </ul>
+                </li>
+            </div>
+        </ul>
+
+    </div>
+
+    <!-- dashboard -->
+    <section class="dashboard-section">
+        <div class="dashboard-header px-5">
+            <div class="user-and-logout">
+                <div class="d-flex align-items-center gap-2" style="border-right: 1px solid #AAAAAA; padding-right: 20px;">
+                    <img src="./img/svg/Icon-user.svg" class="dashboard-user img-fluid" alt="user">
+                    <p class="user-name mb-0 ">User</p>
+                </div>
+
+                <div class="" style="padding-left: 20px;">
+                    <a href="./arabic/dashboard.html"><img src="./img/svg/arabic.svg" class="arabic" alt="Arabic"></a>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-content" style="padding: 0 3rem 0 3rem;">
+            <div class="add-items mt-5">
+                <i class="bx bx-menu" style="user-select: auto;"></i>
+            </div>
+            <div class="container-fluid dashboard-section__blocks">
+                <div class="dashboard-section__bread-crum  my-3">
+                    <nav class="dashboard-section__wrapper" style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-white">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Library</li>
+                            <li class="breadcrumb-item active" aria-current="page">Library</li>
+                            <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                        <a href="#" class="btn-md">Add Items</a>
+                    </nav>
+                </div>
+                <div class="row dashboard-section__vender-form bg-white">
+                    <div class="col-md-12 colum-9">
+                        <div class="row justify-content-center gap-5 mt-3">
+                            <div class="col-md-5">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Name English</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter English Name">
+
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Name Arabic</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Arabic Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center gap-5 mt-3">
+                            <div class="col-md-5">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Description English</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter English Description" rows="2"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Description Arabic</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter Arabic Description" rows="2"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center gap-5 mt-3">
+                            <div class="col-md-5">
+                                <label for="exampleFormControlTextarea1" class="form-label">Select Category</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                            </div>
+                            <div class="col-md-5">
+                                <label for="choices-multiple-remove-button" class="form-label">Select Color&size</label>
+                                <select id="choices-multiple-remove-button" class="form-control" placeholder="Select upto 5 tags" multiple>
+                                  <option value="HTML">HTML</option>
+                                  <option value="Jquery">Jquery</option>
+                                  <option value="CSS">CSS</option>
+                                  <option value="Bootstrap 3">Bootstrap 3</option>
+                                  <option value="Bootstrap 4">Bootstrap 4</option>
+                                  <option value="Java">Java</option>
+                                  <option value="Javascript">Javascript</option>
+                                  <option value="Angular">Angular</option>
+                                  <option value="Python">Python</option>
+                                  <option value="Hybris">Hybris</option>
+                                  <option value="SQL">SQL</option>
+                                  <option value="NOSQL">NOSQL</option>
+                                  <option value="NodeJS">NodeJS</option>
+                              </select>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center gap-5 mt-3">
+                            <div class="col-md-5 mt-2">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Used for persons</label>
+                                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Enter Arabic Name">
+                                </div>
+                            </div>
+                            <div class="col-md-5 mt-2">
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">Image</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Bootstrap 4.6x -->
+    <!-- jQuery and Bootstrap Bundle (includes Popper)  -->
+    <!-- <script src="js/jquery.js"></script>
+		<script src="js/bootstrap-4.6x/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Bootstrap 5.0 beta 2 -->
+    <!-- Bootstrap Bundle with Popper -->
+    <!-- <script src="js/bootstrap-5.0/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
+                removeItemButton: true,
+                maxItemCount: 5,
+                searchResultLimit: 5,
+                renderChoiceLimit: 5
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>
+<!-- 
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-google"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-linkedin-in"></i>
+<i class="fab fa-youtube"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-whatsapp"></i> 
+<i class="fas fa-check"></i>
+<i class="far fa-check-circle"></i>
+<i class="fas fa-chevron-down"></i>
+<i class="far fa-envelope"></i>
+<i class="fas fa-phone-alt"></i>
+<i class="fas fa-map-marker-alt"></i>
+-->

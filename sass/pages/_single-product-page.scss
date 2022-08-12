@@ -1,0 +1,276 @@
+.single-product {
+    &__wrapper {
+        margin: 3rem 0;
+        .owl-theme .owl-nav {
+            display: none;
+        }
+    }
+    &__visit-page {
+        padding: 1rem 0;
+        img {
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+    .add-to-cart {
+        width: 25%;
+        @include media-query(phone) {
+            width: 100%;
+        }
+    }
+    &__visit-page-wrapper {
+        display: flex;
+        background-color: #e6d7d7;
+        align-items: center;
+        gap: 1rem;
+        width: 20rem;
+        border-radius: 1rem;
+        padding: .6rem 1rem;
+    }
+    &__silder {
+        .single-product-img {
+            @media screen and(max-width: 992px) {
+                width: 100%;
+            }
+        }
+    }
+    &__upload {
+        text-align: end;
+        padding: 1rem;
+    }
+    &__specification {
+        padding: 1rem 0;
+    }
+    &__code {
+        .code {
+            font-weight: bold;
+            color: $specail-text-color;
+        }
+    }
+    &__title-detail {
+        @include flex($justify: space-between, $align: center);
+    }
+    &__quantity {
+        padding: 1rem 0;
+        @include flex($justify: space-between, $align: center);
+    }
+    .flexStyle {
+        border: 1px solid #26C6DA;
+        border-radius: .5rem;
+        padding: .5rem .7rem;
+        width: 8rem;
+        button {
+            background-color: transparent;
+            color: $specail-text-color;
+        }
+    }
+    &__add-ons {
+        padding: 1rem 0;
+        .form-check-input:checked {
+            background-color: $text-primary-color;
+        }
+        .form-check-input:focus {
+            box-shadow: none;
+        }
+    }
+    &__add-ons-wrapper {
+        margin-bottom: 1rem;
+        @include flex($justify: space-between, $align: center);
+        label {
+            margin-left: 4rem;
+            color: $dark-text-color;
+        }
+    }
+    // cart page
+    &__my-cart {
+        padding: 2rem 0;
+        @include flex($justify: unset, $align: center);
+        .cart-heading {
+            width: 80%;
+            text-align: center;
+        }
+        .back-arrow {
+            width: 10%;
+            img {
+                width: 1.5rem;
+            }
+        }
+    }
+    .payment-summery {
+        padding: 2rem 0;
+    }
+    &__payment-summery {
+        border-radius: 1rem;
+    }
+    &__cart-items {
+        padding: 1rem;
+        @include flex($justify: space-between, $align: center);
+    }
+    &__cart-item-details {
+        gap: 1rem;
+        @include flex($justify: unset, $align: center);
+        .product {
+            width: 9rem;
+        }
+    }
+    &__navtabs {
+        .nav-item {
+            flex-grow: 1;
+            border-radius: 1rem;
+            border: 3px solid #f4f4f4;
+            overflow: hidden;
+            .nav-link {
+                color: white;
+                padding: .9rem;
+                width: 100%;
+                font-weight: 600;
+                background: linear-gradient( 305deg, rgba(19, 146, 216, 1), rgba(38, 198, 218, 100%))!important;
+                &:hover {
+                    color: $dark-text-color;
+                    background: linear-gradient( 305deg, rgba(19, 147, 216, 0), rgba(38, 197, 218, 0))!important;
+                }
+            }
+        }
+    }
+    .select-button {
+        display: flex;
+        gap: 2rem;
+        a {
+            padding: .6rem .9rem;
+            flex-grow: 1;
+            border-radius: 1rem;
+            font-weight: 400;
+            color: $text-primary-color;
+            border: 2px solid #f5e2e2;
+            img {
+                margin-right: 4rem;
+            }
+        }
+        .select-your-payment {
+            position: absolute;
+            top: 0;
+            right: 0%;
+            .form-check-input[type=checkbox] {
+                border-radius: 50%;
+            }
+            .form-check-input:checked {
+                background-color: green;
+            }
+            .form-check-input:focus {
+                box-shadow: none;
+                border: 1px solid green;
+            }
+        }
+    }
+    .mark-on-map {
+        display: flex;
+        font-weight: 500;
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 2px solid #f5e2e2;
+        a {
+            color: $text-primary-color;
+        }
+    }
+    .map {
+        iframe {
+            width: 100%;
+        }
+    }
+    .payment-method {
+        a {
+            width: 50%;
+            img {
+                @include media-query(phone) {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+    .payment-method-input {
+        .form-control {
+            background-color: #F4F4F4;
+            border: none;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 1.4rem;
+            margin-bottom: 1rem;
+            font-size: 1.6rem[];
+        }
+    }
+    // my profile
+    .person-info {
+        text-align: center;
+        .person-img {
+            width: 4rem;
+            height: 4rem;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+    .add-new-card,
+    .remove-card {
+        padding: 1.1rem;
+        border-radius: 1rem;
+        border: 1px solid #f4f4f4;
+        background-color: transparent;
+    }
+    .profile-wrapper {
+        .form-control,
+        select {
+            padding: 1rem;
+            font-size: 1.4rem;
+        }
+        .number-code {
+            border: 1px solid #ced4da;
+        }
+    }
+}
+
+// payment revie pages
+.payment-reviews {
+    position: relative;
+    &__thanku-msg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 3rem;
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+        }
+    }
+    &__bg-img {
+        position: relative;
+    }
+    &__content {
+        margin-top: -30rem;
+        padding-bottom: 14rem;
+        @media screen and (max-width: 990px) {
+            margin-top: -25rem;
+            padding-bottom: 12rem;
+        }
+        @media screen and (max-width:800px) {
+            margin-top: -20rem;
+            padding-bottom: 10rem;
+        }
+        @media screen and (max-width:700px) {
+            margin-top: -10rem;
+            padding-bottom: 5rem;
+        }
+        @media screen and (max-width:600px) {
+            margin-top: -5rem;
+            padding-bottom: 3rem;
+        }
+        .back-arrow {
+            img {
+                width: 2.5rem;
+            }
+        }
+    }
+    .view-recept,
+    .Shop-more {
+        padding: 3rem 0;
+        border-radius: 1rem;
+    }
+}

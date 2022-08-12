@@ -1,0 +1,263 @@
+//hero section
+.section-hero {
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    overflow-x: hidden;
+    &__wrapper {
+        display: flex;
+        @media screen and(max-width: 700px) {
+            flex-direction: column;
+        }
+    }
+    &__left-side {
+        width: 40%;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+        padding: 7rem 2rem;
+        @media screen and(max-width: 700px) {
+            width: 100%;
+        }
+        .dicover-btn {
+            margin-top: 4rem;
+            .plus {
+                width: 1rem;
+            }
+        }
+        .owl-nav {
+            display: none;
+        }
+        .owl-dots {
+            text-align: end;
+        }
+        .catagories-icon {
+            width: 4rem;
+        }
+    }
+    &__right-side {
+        width: 60%;
+        clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0% 100%);
+        text-align: center;
+        background-color: #0288D1;
+        position: relative;
+        @media screen and(max-width: 700px) {
+            width: 100%;
+            clip-path: none;
+        }
+        .overlaysahow {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: -5rem
+        }
+        .banner-product-img {
+            width: 60rem;
+            object-fit: cover;
+            @include media-query(tab-land) {
+                margin-left: 10rem;
+            }
+            @include media-query(tab-port) {
+                width: 40rem;
+                margin-top: 5rem;
+            }
+            @media screen and(max-width: 700px) {
+                width: 60rem;
+                margin-top: 0rem;
+                padding: 6rem 0;
+                margin-left: 0rem;
+            }
+        }
+        .Outdoor-gear {
+            @include flex($justify: unset, $align: center);
+            gap: 1rem;
+            color: $white-color;
+            font-weight: lighter;
+            bottom: 3rem;
+            left: 8rem;
+            position: absolute;
+            img {
+                width: 5rem;
+            }
+        }
+    }
+}
+
+// User side bar
+.User-sidebar {
+    width: 35rem;
+    height: 100vh;
+    background: linear-gradient( 130deg, rgba(38, 198, 218, 100%), rgba(226, 161, 0, 100%));
+    position: fixed;
+    top: 0;
+    overflow-y: auto;
+    left: -35rem;
+    z-index: 3;
+    transition: all .3s ease;
+    &__header {
+        @include flex($justify: space-between, $align: center);
+        padding: 5rem 2rem 2rem 3rem;
+    }
+    &__logo {
+        width: 20rem;
+        object-fit: cover;
+    }
+    &__user-info {
+        padding: 1rem 2rem 2rem 2rem;
+    }
+    &__user-info-wrapper {
+        @include flex($justify: unset, $align: center);
+        gap: 1rem;
+        background: rgba(112, 112, 112, 0.39);
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    &__user-img {
+        @include avatar;
+    }
+    &__details {
+        color: $white-color;
+        .name {
+            font-size: 2rem;
+        }
+        .country {}
+        .user-id {}
+    }
+    &__option-list-wrapper {
+        padding: 1rem 2rem 2rem 2rem;
+    }
+    &__option-item {
+        border-radius: 1rem;
+        a:hover {
+            color: $white-color;
+        }
+        &:hover {
+            background-color: rgba(112, 112, 112, 0.39);
+        }
+    }
+    &__item-wrapper {
+        @include flex($justify: unset, $align: center);
+        gap: 1.1rem;
+        color: $white-color;
+        padding: 1rem;
+        .name {
+            font-size: 1.8rem;
+        }
+    }
+    .modifier {
+        padding: 1rem;
+        padding-left: 2rem;
+        border-radius: 1rem;
+        background: rgba(112, 112, 112, 0.39);
+    }
+}
+
+.User-sidebar.show {
+    left: 0rem;
+    @media screen and(max-width: 420px) {
+        width: 100%;
+    }
+}
+
+//overly
+.Userside-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.User-sidebar.show .Userside-overlay {
+    display: block;
+}
+
+.section-content {
+    background-color: $light-bg-2;
+    padding-bottom: 4rem;
+    //filter section
+    .section-filter {
+        width: 70%;
+        margin: 0 auto;
+        padding: 3rem 0;
+        @include media-query(tab-land) {
+            width: 80%;
+        }
+        @include media-query(tab-port) {
+            width: 90%;
+        }
+        &__filter-btn {
+            .item {
+                max-width: 14rem;
+            }
+            .owl-nav {
+                display: none;
+            }
+        }
+        &__heading {
+            font-size: 2.2rem;
+            color: $black-color;
+        }
+    }
+    //Just added product
+    .section-justadded-products {
+        width: 70%;
+        margin: 0 auto;
+        padding: 0rem 0 2rem 0;
+        @include media-query(tab-land) {
+            width: 80%;
+        }
+        @include media-query(tab-port) {
+            width: 90%;
+        }
+        .owl-nav {
+            display: none;
+        }
+        &__heading {
+            @include flex($justify: space-between, $align: center);
+            padding: 2rem 0rem;
+        }
+        &__title {
+            font-size: 2.2rem;
+            color: $black-color;
+        }
+        &__products {
+            .item {
+                width: 18rem;
+                border-radius: .8rem;
+                background-color: $white-color;
+            }
+        }
+        &__img {
+            padding: 1rem;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        &__img-details {
+            padding: 1rem 1.7rem;
+            .product-name {
+                font-size: 1.8rem;
+            }
+            .product-flexibililty {
+                font-size: 1.8rem;
+                color: $dark-text-color;
+            }
+            .product-code {
+                @include flex($justify: space-between, $align: center);
+            }
+            .code {
+                font-size: 1.6rem;
+                color: $specail-text-color;
+            }
+        }
+    }
+}

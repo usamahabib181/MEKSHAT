@@ -1,0 +1,108 @@
+.section-products {
+    &__wrapper {
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+        }
+    }
+    &__slider {
+        .owl-theme .owl-nav {
+            display: none;
+        }
+    }
+    &__sildercontent {
+        padding: 2rem;
+    }
+    &__sidbar,
+    &__sildercontent {
+        @media screen and (max-width: 900px) {
+            width: 100%;
+        }
+    }
+    .section-filter {
+        padding: 3rem 0;
+        @include media-query(tab-land) {
+            width: 100%;
+        }
+        @include media-query(tab-port) {
+            width: 90%;
+        }
+        &__filter-btn {
+            .item {
+                max-width: 14rem;
+            }
+            .owl-nav {
+                display: none;
+            }
+        }
+        &__heading {
+            font-size: 2.2rem;
+            color: $black-color;
+        }
+    }
+    .section-justadded-products {
+        .owl-nav {
+            display: none;
+        }
+        &__heading {
+            @include flex($justify: space-between, $align: center);
+            padding: 2rem 0rem;
+        }
+        &__title {
+            font-size: 2.2rem;
+            color: $black-color;
+        }
+        &__products {
+            .item {
+                width: 20rem;
+                border-radius: .8rem;
+                background-color: $white-color;
+            }
+        }
+        &__img {
+            padding: 1rem;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        &__img-details {
+            padding: 1rem 1.7rem;
+            .product-name {
+                font-size: 1.8rem;
+            }
+            .product-flexibililty {
+                font-size: 1.8rem;
+                color: $dark-text-color;
+            }
+            .product-code {
+                @include flex($justify: space-between, $align: center);
+            }
+            .code {
+                font-size: 1.6rem;
+                color: $specail-text-color;
+            }
+        }
+    }
+    &__sidbar {
+        padding: 4rem 3rem;
+        @media screen and (max-width: 1400px) {
+            padding: 2rem;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: transparent;
+            box-shadow: none;
+        }
+        .accordion-item {
+            background-color: transparent;
+            border: none;
+        }
+        .accordion-button {
+            background-color: transparent;
+            font-size: 1.8rem;
+            color: $black-color;
+        }
+        .accordion-body li {
+            color: $dark-text-color;
+        }
+    }
+}

@@ -1,0 +1,149 @@
+.section-header {
+    background-color: #F8F8F8;
+    &__wrapper {
+        @include flex($justify: unset, $align: center);
+        padding: 1rem 4rem;
+        transition: all .2s ease-in;
+        @media screen and(max-width: 768px) {
+            padding: 1rem 2rem;
+        }
+        @include media-query(phone) {
+            padding: 1rem 0rem 1rem 1rem;
+        }
+    }
+    &__user-sidebar-btn {
+        flex: 1;
+        .toggle-btn {
+            cursor: pointer;
+        }
+    }
+    &__logo {
+        flex: 1;
+        img {
+            margin-left: 3.4rem;
+            @include media-query(phone) {
+                margin-left: -1rem;
+            }
+        }
+    }
+    &__site-socail-icon {
+        @include flex($justify: unset, $align: center);
+        .site-option:not(:first-child) {
+            padding-left: 2rem;
+        }
+        .search-icon {
+            @include media-query(phone) {
+                width: 3rem;
+            }
+        }
+    }
+    .dn-P {
+        padding-left: 1rem;
+        @include media-query(phone) {
+            display: none;
+        }
+    }
+    .user-and-lang {
+        @include flex($justify: unset, $align: center);
+        .user {
+            @include flex($justify: unset, $align: center);
+            gap: 1rem;
+            border-right: 1px solid #AAAAAA;
+            img {
+                @include avatar;
+            }
+            @include media-query(phone) {
+                border-right: none;
+                padding-left: 0rem;
+            }
+            img {
+                margin-right: 1rem;
+            }
+        }
+    }
+    .open-search-box {
+        position: relative;
+    }
+    .search-box {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3;
+        max-width: 30rem;
+        min-width: 23rem;
+        font-size: 1.2rem;
+        display: none;
+        .search-box-wrapper {
+            display: flex;
+            padding: 0.2rem 1rem;
+            border-radius: .6rem;
+            background-color: white;
+        }
+        input {
+            border: none;
+            flex-grow: 1;
+            padding: 1rem;
+            &:focus {
+                outline: none;
+                offset: none;
+            }
+        }
+        .search-box-bottom {
+            background-color: white;
+            padding: 1rem;
+            border-radius: .6rem;
+        }
+    }
+    .show-box {
+        display: block;
+        transition: all .5s ease;
+    }
+    .searchbox-overlay {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 2;
+    }
+    .search-box.show-box .searchbox-overlay {
+        display: block;
+    }
+}
+
+//   Icon Show on Phone  
+.section-Phoneheader {
+    &__wrapper {
+        @include flex($justify: unset, $align: center);
+        flex-direction: column;
+        position: absolute;
+        row-gap: 1rem;
+        right: 0px;
+        top: 25rem;
+        opacity: 0;
+        transition: all .3s ease;
+        z-index: 2;
+        @include media-query(phone) {
+            opacity: 1;
+        }
+        .shopping,
+        .change-lang {
+            border-radius: 1rem 0 0 1rem;
+            width: 6rem;
+            text-align: center;
+            background-color: $light-bg;
+        }
+        .shopping {
+            padding: 2rem;
+        }
+        .change-lang {
+            padding: 0.4rem 2rem 2rem 2rem;
+        }
+    }
+}
